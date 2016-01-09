@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>G&M Pasteles</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- necesario para mostrar contenido en celu -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="fonts.css">
+  <link href="css/toastr.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/blueimp-gallery.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+  
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#inicio">G&M</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#acerca">Acerca de G&M</a></li>
+        <li><a href="#servicios">Nuestro Trabajo</a></li>
+        <li><a href="#pedidos">Pedidos</a></li>
+        <li><a href="#googleMap">¿Donde estamos?</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="inicio" class="jumbotron text-center">
+  <h1>G&M Pasteles </h1> 
+  <p>Tortas y Cupcakes</p> 
+  <img alt="Brand" src="img/3.png" width="304" height="300">
+</div>
+
+<!-- Container (acerca de..) -->
+<div id="acerca" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-16">
+      <h2 class="acercade">Acerca de G&M</h2><br>
+      <h4 class ="extracto">G&M surge como un pequeño emprendimiento familiar, a cargo de Gisela y Micaela Gianastasio, con el objetivo de diseñar tortas y cupcakes de diversos temas para reuniones, fiestas infantiles, etc.</p>
+      <h1 class ="sugerencia">¿Tiene alguna consulta o sugerencia?</h1>
+      <br><button class="btn btn-danger center-block btn-lg">
+      <span class="glyphicon glyphicon-envelope"> Contactenos!</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Container (servicios..) -->
+<div id="servicios" class="container-fluid text-center bg-grey">
+  <h2>Nuestro Trabajo</h2>
+  <br>
+
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="links">
+    <a href="img/1.jpg" title="Flor" data-gallery>
+        <img src="img/1.jpg" alt="Flor" width="200" height="150">
+    </a>
+    <a href="img/2.jpg" title="cosa1" data-gallery>
+        <img src="img/2.jpg" alt="cosa1" width="200" height="150">
+    </a>
+    <a href="img/4.jpg" title="cosa2" data-gallery>
+        <img src="img/4.jpg" alt="cosa2"  width="200" height="150">
+    </a>
+</div>
+
+
+
+
+
+</div>
+
+
+
+  
+  <h2 class="clientes">Lo que nuestros clientes dicen</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Excelente torta y precio!"<br><span style="font-style:normal;">Fulanito1</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Wow!"<br><span style="font-style:normal;">Fulanito2</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Muy buena la atención!"<br><span style="font-style:normal;">Siwon, no mentira</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<!-- pedidos -->
+<div id="pedidos" class="container-fluid bg-grey">
+  <h2 class="text-center">Pedidos</h2>
+   <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h3>Ingrese las caracteristicas de su pedido, y le contestaremos a la brevedad.</h3>
+          <form class="form-inline" role="form" action="//formspree.io/fedeguastadisegni@gmail.com" method="POST">
+          <div class="form-group">
+            <div class="block">
+                <label><span>Tu Nombre</span><input type="text" class="form-control" name="Nombre del cliente"></label>
+            </div>
+             <div class="block">
+            <label><span>Telefono/Celular</span><input type="text" class="form-control" name="Tel"></label>
+            </div>
+             <div class="block">
+            <label><span>Su Email</span><input type="email" class="form-control" name="Email"></label>
+            </div>
+             <div class="block">
+            <label><span>Mensaje</span><textarea class="form-control" name="Mensaje"></textarea></label>
+            </div>
+           <button type="submit" class="btn btn-danger" value="send">Submit</button>
+           <input type="hidden" name="_next" value="http://localhost:8080/GM/enviado.html"/>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="social">
+		<ul>
+			<li><a href="http://www.facebook.com/oh.ha.ni1994" target="_blank" class="fa fa-facebook-official"></a></li>
+			<li><a href="http://www.twitter.com/falconmasters" target="_blank" class="fa fa-twitter-square"></a></li>
+			<li><a href="mailto:gisela.gianastasio@hotmail.com" target="_blank" class="fa fa-paper-plane-o"></a></li>
+		</ul>
+	</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(-34.729046,-58.364575);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Copyright Federico Guastadisegni</p>		
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+  
+  // Slide in elements on scroll
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+  <script src="js/bootstrap-image-gallery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+  <script type="text/javascript">
+ $(document).ready(function() {
+    $(".jMyCarousel").jMyCarousel({ // Script de los Thumbnails
+    visible: '100%',
+    eltByElt: true
+    });
+$(".jMyCarousel img").fadeTo(100, 0.6);
+$(".jMyCarousel a img").hover(
+    function(){ //mouse over
+       $(this).fadeTo(400, 1);
+    },
+    function(){ //mouse out
+      $(this).fadeTo(400, 0.6);
+    });
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){ // Script de la Galeria
+    $('#contenido_galeria div').css('position', 'absolute').not(':first').hide();
+    $('#contenido_galeria div:first').addClass('aqui');
+    $('.jMyCarousel a').click(function(){
+        $('#contenido_galeria div.aqui').fadeOut(400);
+        $('#contenido_galeria div').removeClass('aqui').filter(this.hash).fadeIn(400).addClass('aqui');
+        return false;
+    });
+ });
+</script> 
+
+ 
+
+
+</body>
+</html>
