@@ -107,7 +107,7 @@ body {
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #f4511e;
+      background-color: #ed410c;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -223,8 +223,8 @@ body {
 	}
  
 	.social ul li .fa-facebook-official {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
-	.social ul li .fa-twitter-square {background: #00abf0;}
-	.social ul li .fa-paper-plane-o {background: #666666;}
+	.social ul li .fa-facebook-f {background: #0087bd;}
+	
  
 	.social ul li a:hover {
 		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
@@ -244,16 +244,6 @@ form{
   margin: 0 auto;
 }
 
-label {
-    display:inline-block;
-    *display: inline;     /* for IE7*/
-    zoom:1;              /* for IE7*/
-    float: left;
-    padding-top: 5px;
-    text-align: right;
-    width: 140px;
-}
-
 
 
 
@@ -267,3 +257,30 @@ div.jMyCarousel ul li img   {   display:block; border:0px; margin: 0px 5px 0px;}
 #contenido_galeria {   position: relative; height: 350px;}
 #contenido_galeria img  {   float: left; width: 700px;}
 #contenido_galeria p {   width: 270px; position: absolute; top: 0px; left: 730px; }
+
+.first_brand{
+    margin-top: 20px;
+    margin-left: 12px;
+    font-weight: bold;
+    font-size:24px;
+    color: #ffffff;
+    /*The change*/
+    display:inline-block; /*or display:block;*/
+
+}
+
+.tuNombre{
+    margin-top: 20px;
+    margin-left: 12px;
+    font-weight: italic;
+    font-size:24px;
+    color: #ffffff;
+    /*The change*/
+    display:inline-block; /*or display:block;*/
+
+}
+
+.donde{
+  text-align: center;
+
+}

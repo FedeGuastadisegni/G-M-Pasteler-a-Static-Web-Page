@@ -9,7 +9,6 @@
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="fonts.css">
-  <link href="css/toastr.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/blueimp-gallery.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
@@ -29,13 +28,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#inicio">G&M</a>
+      <a class="navbar-brand" href="#inicio"><span class="first_brand">G&M</span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#acerca">Acerca de G&M</a></li>
         <li><a href="#servicios">Nuestro Trabajo</a></li>
-        <li><a href="#pedidos">Pedidos</a></li>
+        <li><a href="#pedidos">Contactenos!</a></li>
         <li><a href="#googleMap">¿Donde estamos?</a></li>
         </ul>
     </div>
@@ -53,11 +52,7 @@
   <div class="row">
     <div class="col-sm-16">
       <h2 class="acercade">Acerca de G&M</h2><br>
-      <h4 class ="extracto">G&M surge como un pequeño emprendimiento familiar, a cargo de Gisela y Micaela Gianastasio, con el objetivo de diseñar tortas y cupcakes de diversos temas para reuniones, fiestas infantiles, etc.</p>
-      <h1 class ="sugerencia">¿Tiene alguna consulta o sugerencia?</h1>
-      <br><button class="btn btn-danger center-block btn-lg">
-      <span class="glyphicon glyphicon-envelope"> Contactenos!</span>
-      </button>
+      <h3 class ="extracto">G&M surge como un pequeño emprendimiento familiar, a cargo de Gisela y Micaela Gianastasio, con el objetivo de diseñar tortas y cupcakes de diversos temas para reuniones, fiestas infantiles, etc.</h3>
     </div>
   </div>
 </div>
@@ -69,6 +64,7 @@
   <h2>Nuestro Trabajo</h2>
   <br>
 
+<!-- Galeria -->
 <div id="blueimp-gallery" class="blueimp-gallery">
     <!-- The container for the modal slides -->
     <div class="slides"></div>
@@ -130,20 +126,20 @@
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"Excelente torta y precio!"<br><span style="font-style:normal;">Fulanito1</span></h4>
+        <h4>"Muy buena la atención y la calidad de la torta!"<br><span style="font-style:normal;">Andrea Montoya</span></h4>
       </div>
       <div class="item">
         <h4>"Wow!"<br><span style="font-style:normal;">Fulanito2</span></h4>
       </div>
-      <div class="item">
+      <!--<div class="item">
         <h4>"Muy buena la atención!"<br><span style="font-style:normal;">Siwon, no mentira</span></h4>
-      </div>
+      </div>-->
     </div>
 
     <!-- Left and right controls -->
@@ -161,26 +157,30 @@
 
 <!-- pedidos -->
 <div id="pedidos" class="container-fluid bg-grey">
-  <h2 class="text-center">Pedidos</h2>
+  <h2 class="text-center">Contactenos!</h2>
    <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
-        <h3>Ingrese las caracteristicas de su pedido, y le contestaremos a la brevedad.</h3>
-          <form class="form-inline" role="form" action="//formspree.io/fedeguastadisegni@gmail.com" method="POST">
+      <div class="col-sm-16">
+        <h3>Por favor, complete el siguiente formulario, llenando la parte de "mensaje" con la idea o las especificaciones que necesita para su fiesta, y nos pondremos en contacto a la brevedad para hablar sobre la factibilidad de su pedido, precio y tiempos de entrega. Muchas Gracias.</h3>
+        <form class="form" role="form" action="//formspree.io/fedeguastadisegni@gmail.com" method="POST">
           <div class="form-group">
-            <div class="block">
-                <label><span>Tu Nombre</span><input type="text" class="form-control" name="Nombre del cliente"></label>
-            </div>
-             <div class="block">
-            <label><span>Telefono/Celular</span><input type="text" class="form-control" name="Tel"></label>
-            </div>
-             <div class="block">
-            <label><span>Su Email</span><input type="email" class="form-control" name="Email"></label>
-            </div>
-             <div class="block">
-            <label><span>Mensaje</span><textarea class="form-control" name="Mensaje"></textarea></label>
-            </div>
-           <button type="submit" class="btn btn-danger" value="send">Submit</button>
-           <input type="hidden" name="_next" value="http://localhost:8080/GM/enviado.html"/>
+              <label>Nombre:</label>
+              <input type="text" class="form-control" name="Nombre del cliente">
+          </div>
+          <div class="form-group">
+            <label>Teléfono/Celular</label>
+            <input type="text" class="form-control" name="Tel">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="Email">
+          </div>
+          <div class="form-group">
+            <label>Mensaje</label>
+            <textarea class="form-control" name="Mensaje" rows="5"></textarea>
+          </div>
+           <button type="submit" class="btn btn-danger" value="send">Enviar Consulta</button>
+           <input type="hidden" name="_next" value="http://localhost/GM/enviado.html"/>
+           <input type="hidden" name="_subject" value="Nueva Consulta!" />
           </form>
         </div>
     </div>
@@ -191,12 +191,15 @@
 <div class="social">
 		<ul>
 			<li><a href="http://www.facebook.com/oh.ha.ni1994" target="_blank" class="fa fa-facebook-official"></a></li>
-			<li><a href="http://www.twitter.com/falconmasters" target="_blank" class="fa fa-twitter-square"></a></li>
-			<li><a href="mailto:gisela.gianastasio@hotmail.com" target="_blank" class="fa fa-paper-plane-o"></a></li>
+      <li><a href="https://www.facebook.com/Mikaww" target="_blank" class="fa fa-facebook-f"></a></li>
 		</ul>
 	</div>
 
+<h2 class="donde">¿Donde nos encontramos?</h2>
+
 <div id="googleMap" style="height:400px;width:100%;"></div>
+
+
 
 <!-- Add Google Maps -->
 <script src="http://maps.googleapis.com/maps/api/js"></script>
@@ -268,7 +271,7 @@ $(document).ready(function(){
 </script>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <script src="js/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
   <script src="js/bootstrap-image-gallery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
