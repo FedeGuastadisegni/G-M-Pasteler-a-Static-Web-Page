@@ -9,7 +9,7 @@
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="css/blueimp-gallery.css">
+ 
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
   <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
@@ -44,7 +44,7 @@
 <div id="inicio" class="jumbotron text-center">
   <h1>G&M Pasteles </h1> 
   <p>Tortas y Cupcakes</p> 
-  <img alt="Brand" src="img/3.png" width="304" height="300">
+  <img alt="Brand" src="img/logo.png" width="304" height="350">
 </div>
 
 <!-- Container (acerca de..) -->
@@ -62,6 +62,7 @@
 <!-- Container (servicios..) -->
 <div id="servicios" class="container-fluid text-center bg-grey">
   <h2>Nuestro Trabajo</h2>
+  <h4>Puede tocar las imagenes para verlas en la galería</h4>
   <br>
 
 <!-- Galeria -->
@@ -100,14 +101,26 @@
 </div>
 
 <div id="links">
-    <a href="img/1.jpg" title="Flor" data-gallery>
-        <img src="img/1.jpg" alt="Flor" width="200" height="150">
+    <a href="img/5.jpg" title="Cupcakes de Batman" data-gallery>
+        <img src="img/5.jpg" alt="Cupcakes de Batman" width="70" height="70">
     </a>
-    <a href="img/2.jpg" title="cosa1" data-gallery>
-        <img src="img/2.jpg" alt="cosa1" width="200" height="150">
+    <a href="img/6.jpg" title="Torta de Batman con sus respectivos Cupcakes" data-gallery>
+        <img src="img/6.jpg" alt="Torta de Batman con sus respectivos Cupcakes" width="70" height="70">
     </a>
-    <a href="img/4.jpg" title="cosa2" data-gallery>
-        <img src="img/4.jpg" alt="cosa2"  width="200" height="150">
+    <a href="img/7.jpg" title="Cupcakes de Batman" data-gallery>
+        <img src="img/7.jpg" alt="Cupcakes de Batman1"  width="70" height="70">
+    </a>
+     <a href="img/8.jpg" title="Torta de Minion" data-gallery>
+        <img src="img/8.jpg" alt="Torta de Minion"  width="70" height="70">
+    </a>
+    <a href="img/9.jpg" title="Torta de Rose" data-gallery>
+        <img src="img/9.jpg" alt="Torta de Rose"  width="70" height="70">
+    </a>
+     <a href="img/10.jpg" title="Torta de Panda" data-gallery>
+        <img src="img/10.jpg" alt="Torta de Panda"  width="70" height="70">
+    </a>
+    <a href="img/11.jpg" title="Pasta Frola" data-gallery>
+        <img src="img/11.jpg" alt="Pasta Frola"  width="70" height="70">
     </a>
 </div>
 
@@ -125,7 +138,7 @@
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
       <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
     </ol>
 
@@ -134,9 +147,9 @@
       <div class="item active">
         <h4>"Muy buena la atención y la calidad de la torta!"<br><span style="font-style:normal;">Andrea Montoya</span></h4>
       </div>
-      <div class="item">
+      <!--<div class="item">
         <h4>"Wow!"<br><span style="font-style:normal;">Fulanito2</span></h4>
-      </div>
+      </div>-->
       <!--<div class="item">
         <h4>"Muy buena la atención!"<br><span style="font-style:normal;">Siwon, no mentira</span></h4>
       </div>-->
@@ -161,27 +174,25 @@
    <div class="row">
       <div class="col-sm-16">
         <h3>Por favor, complete el siguiente formulario, llenando la parte de "mensaje" con la idea o las especificaciones que necesita para su fiesta, y nos pondremos en contacto a la brevedad para hablar sobre la factibilidad de su pedido, precio y tiempos de entrega. Muchas Gracias.</h3>
-        <form class="form" role="form" action="//formspree.io/fedeguastadisegni@gmail.com" method="POST">
-          <div class="form-group">
-              <label>Nombre:</label>
-              <input type="text" class="form-control" name="Nombre del cliente">
-          </div>
-          <div class="form-group">
-            <label>Teléfono/Celular</label>
-            <input type="text" class="form-control" name="Tel">
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control" name="Email">
-          </div>
-          <div class="form-group">
-            <label>Mensaje</label>
-            <textarea class="form-control" name="Mensaje" rows="5"></textarea>
-          </div>
-           <button type="submit" class="btn btn-danger" value="send">Enviar Consulta</button>
-           <input type="hidden" name="_next" value="http://localhost/GM/enviado.html"/>
-           <input type="hidden" name="_subject" value="Nueva Consulta!" />
-          </form>
+
+        <form action="enviar_c.php" method="POST" id="formulario" name="formulario">
+			
+		   
+				<label for="nombre">Nombre:</label><br/>
+				<input type="text"  name="nombre" id="nombre" class="form-control"/><br/>
+				
+				<label for="telefono">Telefono/Celular:</label><br/>
+				<input type="text"  name="telefono" id="telefono" class="form-control"/><br/>
+				
+				<label for="email">Email:</label><br/>
+				<input type="text"  name="email" id="email" class="form-control"/><br/>
+
+				<label for="mensaje">Mensaje</label><br/>
+				<textarea type="text" name="mensaje" id="mensaje" rows="5" class="form-control" placeholder="Ingrese su mensaje..."></textarea>
+
+				<button type="submit" name="enviar" id="enviar" class="canbio">Enviar</button>
+				<button type="button" id="limpiar" name="limpiar" class="canbio">Limpiar</button>
+		</form>
         </div>
     </div>
   </div>
@@ -191,7 +202,7 @@
 <div class="social">
 		<ul>
 			<li><a href="http://www.facebook.com/oh.ha.ni1994" target="_blank" class="fa fa-facebook-official"></a></li>
-      <li><a href="https://www.facebook.com/Mikaww" target="_blank" class="fa fa-facebook-f"></a></li>
+      		<li><a href="https://www.facebook.com/Mikaww" target="_blank" class="fa fa-facebook-f"></a></li>
 		</ul>
 	</div>
 
@@ -231,10 +242,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Copyright Federico Guastadisegni</p>		
+  
 </footer>
 
-<script>
+<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -275,24 +286,10 @@ $(document).ready(function(){
   <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
   <script src="js/bootstrap-image-gallery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script async src="js/validacion.js" language="JavaScript" type="text/javascript" ></script>
 
 
-  <script type="text/javascript">
- $(document).ready(function() {
-    $(".jMyCarousel").jMyCarousel({ // Script de los Thumbnails
-    visible: '100%',
-    eltByElt: true
-    });
-$(".jMyCarousel img").fadeTo(100, 0.6);
-$(".jMyCarousel a img").hover(
-    function(){ //mouse over
-       $(this).fadeTo(400, 1);
-    },
-    function(){ //mouse out
-      $(this).fadeTo(400, 0.6);
-    });
-});
-</script>
+  
 <script type="text/javascript">
   $(document).ready(function(){ // Script de la Galeria
     $('#contenido_galeria div').css('position', 'absolute').not(':first').hide();
